@@ -1,0 +1,8 @@
+# Ignore the entire Backend directory
+Backend/
+
+# Ignore node_modules in Taskbox subfolder
+TaskBox/node_modules/
+
+# Ignore .env file in Taskbox subfolder
+TaskBox/.env
