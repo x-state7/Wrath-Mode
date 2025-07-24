@@ -15,7 +15,8 @@ const userSchema=new mongoose.Schema({
     task:{
         type:String,
     },
-    labels:{
+    description:{
         type:String,
-    }
+    },
+
 })
