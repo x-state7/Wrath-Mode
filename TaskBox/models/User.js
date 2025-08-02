@@ -18,5 +18,14 @@ const userSchema=new mongoose.Schema({
     description:{
         type:String,
     },
+    fileUrl:{
+        type:URL
+    },
+    tags:{
+        type:String
+    },
+    status:{
+        type:String
+    }
 
 })

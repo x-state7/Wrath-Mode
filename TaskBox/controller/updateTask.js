@@ -5,16 +5,16 @@ exports.updateTask=async(req,res)=>{
   try {
     // using find by id and update from mooongoose
     const { id } = req.params;
-    const { title, description } = req.body;
-    const task = await User.findByIdAndUpdate(
+    const { task, description,status } = req.body;
+    const Task = await User.findByIdAndUpdate(
       { _id: id },
-      { title, description, updatedAt: Date.now() },
+      { task, description,status, updatedAt: Date.now() },
     )
 
     res.status(200)
       .json({
         success: true,
-        data: task,
+        data: Task,
         message: "updated successfully",
       })
 

@@ -3,10 +3,10 @@ const User=require("../models/User")
 exports.createTask=async(req,res)=>{
     try{
         // extracting task from req
-        const{description,task}=req.body
+        const{description,task,fileUrl,status,tags}=req.body
 
         // creating a enw todo obj and inserting it in the database
-        const response=await User.create ({task,description})
+        const response=await User.create ({task,description,fileUrl,status,tags})
 
         // send eres
         res.status(200).json({

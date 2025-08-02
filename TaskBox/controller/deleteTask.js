@@ -1,6 +1,6 @@
 const User=require("../models/User")
 
-exports.deleteTodo=async(req,res)=>{
+exports.deleteTask=async(req,res)=>{
     try{
         // using find by id nad delete
         const {id}=req.params;
